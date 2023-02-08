@@ -51,7 +51,7 @@ public class p8
         int source;
         Scanner scanner=new Scanner(System.in);
         System.out.println("enter the num of vertices");
-        num_ver=scanner.nextInt();
+        num_ver=scanner.nextInt();                                  //NO of Vertices --> num_ver
         int[][] a=new int[num_ver+1] [num_ver+1];
         System.out.println("enter the adjacency matrix:");
         for(int sn=1;sn<=num_ver;sn++)

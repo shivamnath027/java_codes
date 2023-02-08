@@ -19,7 +19,7 @@ public class p10udpclient
                 byte[] b = msg.getBytes();
                 DatagramPacket request=new DatagramPacket(b,b.length,host,s_port);   //send
                 skt.send(request);
-                byte buffer[]=new byte[1024];
+                byte[] buffer=new byte[1024];
                 DatagramPacket reply=new DatagramPacket(buffer,buffer.length);   //accept
                 skt.receive(reply);
                 System.out.println("Server:"+new String(reply.getData()));

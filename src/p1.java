@@ -53,14 +53,14 @@
 
 import java.util.*;
 import java.math.BigInteger;
-import java.util.Scanner;
+//import java.util.Scanner;
 class p1{
     public static void main(String[] args){
         Random rand1 = new Random(System.currentTimeMillis());
-        Scanner ip = new Scanner(System.in);
+        //Scanner ip = new Scanner(System.in);
         Random rand2 = new Random(System.currentTimeMillis()*10);
-        int pubkey = ip.nextInt();
-        //int pubkey = Integer.parseInt(args[0]);
+        //int pubkey = ip.nextInt();
+        int pubkey = Integer.parseInt(args[0]);
         BigInteger bigB_p = BigInteger.probablePrime(32,rand1);
         BigInteger bigB_q = BigInteger.probablePrime(32,rand2);
         BigInteger bigB_n = bigB_p.multiply(bigB_q);

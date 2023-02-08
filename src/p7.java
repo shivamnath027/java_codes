@@ -91,7 +91,7 @@ public class p7
             }
         }
     }
-    static int[] computecrc(int app_message[],int gen[],int rem[])
+    static int[] computecrc(int[] app_message,int[] gen,int[] rem)
     {
         int current=0;
         while(true)

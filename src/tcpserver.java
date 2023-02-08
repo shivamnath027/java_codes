@@ -22,7 +22,7 @@ public class tcpserver {
                 System.out.println("reading contents of "+fileName);
                 Scanner contentRead= new Scanner(new FileReader(fileName));
                 OutputStream ostream= s.getOutputStream();
-                PrintWriter pwrite = new PrintWriter(ostream,true);
+                PrintWriter pwrite = new PrintWriter(ostream,true);      //character into bytes
                 //String str;
                 while(contentRead.hasNext())
                     pwrite.println(contentRead.nextLine());
