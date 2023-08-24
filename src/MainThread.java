@@ -27,9 +27,7 @@ class RandomThread implements Runnable {
             while (true) {
                 num = r.nextInt(100);
                 System.out.println("Random Thread and Number is: "+ num);
-
                 t2 = new Thread(new SquareThread(num));
-
                 t2.start();
                 t3 = new Thread(new CubeThread(num));
                 t3.start();
